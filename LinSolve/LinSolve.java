@@ -25,7 +25,7 @@ public class LinSolve {
         } else if (b == 0) {
             System.out.println("Linear equation has no solutions.");
         } else if (a == 0 && b == 0) {
-            System.out.println("Linear equation has endless solutions.");
+            System.out.println("Any real number is the solution.");
         }
          return x;
 
