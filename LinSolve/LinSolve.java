@@ -1,7 +1,7 @@
 public class LinSolve {
 
-    public double a;
-    public double b;
+    protected double a;
+    protected double b;
     public double x;
 
     public void setA(double a) {
