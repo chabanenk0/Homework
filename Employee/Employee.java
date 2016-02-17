@@ -1,4 +1,4 @@
-public class employee {
+public class Employee {
 
     protected String surname = "Nikonov";
     protected String name =  "Oleg";
