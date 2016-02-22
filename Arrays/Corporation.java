@@ -1,7 +1,7 @@
 public class Corporation {
 
     protected String name;
-    public int salaryForEmployee;
+    protected int salaryForEmployee; 
     protected Employee[] employeesArray;
     protected int number;
 
