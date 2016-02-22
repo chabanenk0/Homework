@@ -1,42 +1,18 @@
-public class Corporation {
+public class Main {
+    public static void main(String[] args) {
 
-    protected String name;
-    public int salaryForEmployee;
-    protected Employee[] employeesArray;
-    protected int number;
+        Corporation corporation = new Corporation();
+        corporation.setName("IBM Inc");
+        corporation.setSalaryForEmployee(10000);
+        System.out.println(corporation.toString());
 
-    public Corporation() {
-        this.employeesArray = new Employee[100];
-        this.number = 0;
-    }
+        Employee employee = new Employee();
+        employee.setName("Alex");
+        employee.setSurname("Black");
+        employee.setGuild(13);
+        employee.setCabinet(21);
+        corporation.addEmployee(employee);
+        System.out.println(employee.toString());
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getSalaryForEmployee() {
-        return number;
-    }
-
-    public void setSalaryForEmployee(int salaryForEmployee) {
-        this.salaryForEmployee = salaryForEmployee;
-    }
-
-    public void addEmployee(Employee employee) {
-        this.employeesArray[this.number] = employee;
-        this.number++;
-    }
-
-    public String toString() {
-        String result = this.name + " ready to pay salary in amount of " + this.salaryForEmployee + ".";
-        for(int i = 0; i < this.number; i++) {
-            result += this.employeesArray[i].toString();
-        }
-
-        return result;
     }
 }
