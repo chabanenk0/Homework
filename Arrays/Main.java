@@ -3,8 +3,8 @@ public class Main {
 
         Corporation corporation = new Corporation();
         corporation.setName("IBM Inc");
-        corporation.setSalaryForEmployee(10000);
-        System.out.println(corporation.toString());
+        corporation.setNumberOfEmployees(2);
+        System.out.println(corporation.toString()); 
 
         Employee employee = new Employee();
         employee.setName("Alex");
@@ -12,7 +12,15 @@ public class Main {
         employee.setGuild(13);
         employee.setCabinet(21);
         corporation.addEmployee(employee);
-        System.out.println(employee.toString());
+
+        employee = new Employee();
+        employee.setName("John");
+        employee.setSurname("White");
+        employee.setGuild(15);
+        employee.setCabinet(45);
+        corporation.addEmployee(employee);
+
+        
 
     }
 }
