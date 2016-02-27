@@ -1,7 +1,7 @@
 public class Corporation {
 
     protected String name;
-    protected int salaryForEmployee; 
+    protected int numberOfEmployees;
     protected Employee[] employeesArray;
     protected int number;
 
@@ -11,6 +11,7 @@ public class Corporation {
     }
 
     public String getName() {
+
         return name;
     }
 
@@ -18,12 +19,13 @@ public class Corporation {
         this.name = name;
     }
 
-    public int getSalaryForEmployee() {
+    public int getNumberOfEmployees() {
+
         return number;
     }
 
-    public void setSalaryForEmployee(int salaryForEmployee) {
-        this.salaryForEmployee = salaryForEmployee;
+    public void setNumberOfEmployees(int numberOfEmployees) {
+        this.numberOfEmployees = numberOfEmployees;
     }
 
     public void addEmployee(Employee employee) {
@@ -32,7 +34,7 @@ public class Corporation {
     }
 
     public String toString() {
-        String result = this.name + " ready to pay salary in amount of " + this.salaryForEmployee + ".";
+        String result = this.name + " ready to pay salary for " + this.numberOfEmployees + " employees." + "\n--------\n";
         for(int i = 0; i < this.number; i++) {
             result += this.employeesArray[i].toString();
         }
