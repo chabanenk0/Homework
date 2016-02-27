@@ -14,14 +14,17 @@ public class Employee {
     }
 
     public String getSurname() {
+
         return surname;
     }
 
     public void setSurname(String surname) {
+
         this.surname = surname;
     }
 
     public int getGuild() {
+
         return guild;
     }
 
@@ -38,6 +41,6 @@ public class Employee {
     }
 
     public String toString() {
-        return  " Pay salary for employee " + this.name + " " + this.surname + ", from guild " + this.guild + ", cabinet " + this.cabinet + ".";
+        return  " Pay salary for employee " + this.name + " " + this.surname + ", from guild " + this.guild + ", cabinet " + this.cabinet + "." + "\n \n";
     }
 }
