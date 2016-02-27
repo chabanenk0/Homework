@@ -1,5 +1,4 @@
     import java.util.*;
-    import java.util.Arrays;
 
 
     public class Main {
@@ -56,5 +55,4 @@
 
     }
 
-//терміни, якийсь код з масивом зробить. класи для контейнерів. аррау лісти
 
